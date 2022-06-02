@@ -1,13 +1,13 @@
 //
-//  ViewController.swift
+//  HomeVC.swift
 //  MoviesApp
 //
-//  Created by DIFA SGMA on 2/6/2022.
+//  Created by MBAYE Libasse on 2/6/2022.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class HomeVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
