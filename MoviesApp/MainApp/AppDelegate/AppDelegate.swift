@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  MoviesApp
 //
-//  Created by DIFA SGMA on 2/6/2022.
+//  Created by MBAYE Libasse on 2/6/2022.
 //
 
 import UIKit
