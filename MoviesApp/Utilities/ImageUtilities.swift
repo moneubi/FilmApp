@@ -32,11 +32,18 @@ class ImageUtilities{
         
         image.sd_setImage(with: url) { (image, error, cache, urls) in
             if (error != nil) {
-                self.image.image = UIImage(systemName: "person.fill")
+                self.image.image = UIImage(named: "placeholder")
             } else {
                 self.image.image = image
             }
         }
+        
+        return image
+    }
+    
+    func createSimpleImageUI(x: CGFloat, y: CGFloat, width: CGFloat, height: CGFloat) -> UIImageView{
+        
+        image.frame = CGRect(x: x, y: y, width: width, height: height)
         
         return image
     }
