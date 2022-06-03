@@ -29,7 +29,7 @@ class HomeVC: UIViewController {
         self.tableView = TableViewUtilities.init().createtableView(x: 10, y: 10, width: screenSize.width - 20, height: screenSize.height - 20, rowHeight: 100)
         tableView.register(MovieCell.self, forCellReuseIdentifier: CellId)
         self.view.addSubview(tableView)
-        tableView.backgroundColor = UIColor.clear
+        tableView.backgroundColor = .clear
         tableView.delegate = self
         tableView.dataSource = self
         

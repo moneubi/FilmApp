@@ -38,16 +38,17 @@ class MovieCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
-        self.viewEnglobe = ViewUtilities.init().createView(x: 0, y: 0, width: screenSize.width - 20, height: 90, background: "col_white", cornerRadius: 10)
+        self.backgroundColor = .clear
+        self.viewEnglobe = ViewUtilities.init().createView(x: 0, y: 0, width: screenSize.width - 20, height: 90, background: "col_card", cornerRadius: 10)
         addSubview(viewEnglobe)
         
-        self.image_movie = ImageUtilities.init().createSimpleImageUI(x: 10, y: 5, width: 80, height: 80)
+        self.image_movie = ImageUtilities.init().createSimpleImageUI(x: 0, y: 0, width: 90, height: 90)
         viewEnglobe.addSubview(image_movie)
         
-        self.txt_Title = LabelUtilities.init().createLabelView(x: 100, y: 5, width: self.bounds.width - 100, height: 35, fontName: "HelveticaNeue-Bold", fontSize: 13.0, textColor: "col_title", numberLine: 2)
+        self.txt_Title = LabelUtilities.init().createLabelView(x: 100, y: 5, width: self.bounds.width - 100, height: 35, fontName: "HelveticaNeue-Bold", fontSize: 14.0, textColor: "col_title", numberLine: 2)
         viewEnglobe.addSubview(txt_Title)
         
-        self.descprt_movie = LabelUtilities.init().createLabelView(x: 100, y: 40, width: self.bounds.width - 100, height: 45, fontName: "HelveticaNeue", fontSize: 13.0, textColor: "col_title", numberLine: 3)
+        self.descprt_movie = LabelUtilities.init().createLabelView(x: 100, y: 40, width: self.bounds.width - 100, height: 45, fontName: "HelveticaNeue", fontSize: 14.0, textColor: "col_title", numberLine: 3)
         viewEnglobe.addSubview(descprt_movie)
     }
     
